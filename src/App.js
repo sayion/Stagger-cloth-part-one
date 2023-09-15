@@ -1,4 +1,5 @@
-import "./catogories.style.scss";
+import Directory from "./components/directory/directory.component.jsx";
+
 function App() {
   const data = [
     {
@@ -31,22 +32,7 @@ function App() {
     },
   ];
 
-  return (
-    <div className="categories-container">
-      {data.map(({ title, id, imageUrl }) => (
-        <div key={id} className="category-container">
-          <div
-            className="background-image"
-            style={{ backgroundImage: `url(${imageUrl})` }}
-          ></div>
-          <div className="category-body-container">
-            <h2>{title}</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  return <Directory categories={data}></Directory>;
 }
 
 export default App;
