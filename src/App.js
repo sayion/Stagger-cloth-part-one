@@ -1,38 +1,22 @@
-import Directory from "./components/directory/directory.component.jsx";
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.components.jsx";
+import Say from "./routes/home/say.components";
+import SignIn from "./routes/home/sign-in/sign-in.components.jsx";
+import Navigation from "./routes/home/Navigation/navigation.components.jsx";
+const Shop = () => {
+  return <h1>Heloo this is a SHop page</h1>;
+};
 
-function App() {
-  const data = [
-    {
-      id: 1,
-      title: "HaTs..!",
-      imageUrl:
-        "https://images.pexels.com/photos/35185/hats-fedora-hat-manufacture-stack.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      id: 2,
-      title: "JacKets..!",
-      imageUrl:
-        "https://images.pexels.com/photos/17574583/pexels-photo-17574583/free-photo-of-man-with-sunglasses-and-woman-in-jacket-posing-together.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    },
-    {
-      id: 3,
-      title: "SneaKers..!",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-    },
-    {
-      id: 4,
-      title: "WomeNs..!",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-    },
-    {
-      id: 5,
-      title: "MeNs..!",
-      imageUrl:
-        "   https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-  ];
-
-  return <Directory categories={data}></Directory>;
-}
-
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route index element={<Home></Home>}></Route>
+        <Route path="/Shop" element={<Shop></Shop>}></Route>
+        <Route path="signIn" element={<SignIn></SignIn>}></Route>
+        <Route path="Say" element={<Say></Say>}></Route>
+      </Route>
+    </Routes>
+  );
+};
 export default App;
