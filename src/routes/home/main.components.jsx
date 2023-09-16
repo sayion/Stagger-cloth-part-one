@@ -4,8 +4,8 @@ const Main = () => {
       <div style={{ margin: "10px 10px" }}>
         <h1
           style={{
-            marginTop: "10%",
-            marginBottom: "5%",
+            marginTop: "8%",
+            marginBottom: "4.5%",
             borderBottom: "2px solid black",
             paddingBottom: "3px",
           }}
@@ -18,10 +18,10 @@ const Main = () => {
           alt="First Image"
         ></img>
       </div>
-      <div style={{ margin: "10px 10px" }}>
+      <div style={{ margin: "8px 10px" }}>
         <h1
           style={{
-            marginTop: "10%",
+            marginTop: "8%",
             marginBottom: "5%",
             borderBottom: "2px solid black",
             paddingBottom: "3px",
@@ -37,7 +37,7 @@ const Main = () => {
       </div>
       <div style={{ marginBottom: "10%" }}></div>
       <div>
-        <h1 style={{ borderBottom: "1.2px solid black", paddinBottom: "4px" }}>
+        <h1 style={{ borderBottom: "1.7px solid black", paddinBottom: "4px" }}>
           <center>Explore Our Features</center>
         </h1>
       </div>

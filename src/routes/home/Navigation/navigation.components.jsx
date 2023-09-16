@@ -8,12 +8,12 @@ const Navigation = () => {
         <Link className="logo-container" to="/">
           <img
             style={{
-              height: "190%",
-              width: "120%",
+              height: "220%",
+              width: "110%",
               marginLeft: "20px",
-              marginBottom: "20px",
+              marginBottom: "50px",
             }}
-            src="/images/three.png"
+            src="/images/nin.png"
             alt="My png"
           ></img>
         </Link>
@@ -22,10 +22,10 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "30px",
+            marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "18px",
+            marginBottom: "5px",
           }}
           className="nav-link"
           to="/Shop"
@@ -36,10 +36,10 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "30px",
+            marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "18px",
+            marginBottom: "5px",
           }}
           className="nav-link"
           to="/signIn"
@@ -50,10 +50,10 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "30px",
+            marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "18px",
+            marginBottom: "5px",
           }}
           className="nav-link"
           to="/Shop"
@@ -64,7 +64,7 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "20px",
+            marginTop: "25px",
             fontSize: "18px",
           }}
           className="nav-link"
