@@ -1,6 +1,7 @@
 import { signInWithGooglePopup } from "C:/Users/sayion debnath/Desktop/crown-clothing/src/utils/firebase/firebase.utils.js";
 import { createUserDocumentsFromAuth } from "C:/Users/sayion debnath/Desktop/crown-clothing/src/utils/firebase/firebase.utils.js";
 import SignUpForm from "../../../components/sign-up-form/sign-up-form.components";
+import SignInForm from "../../../components/Sign-In-form/sign-in-form.components";
 const SignIn = () => {
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopup();
@@ -12,12 +13,9 @@ const SignIn = () => {
       <h1>
         <center>SignIn In Page</center>
       </h1>
-      <center>
-        <button onClick={logGoogleUser}>Sign In with Google Auth</button>
-      </center>
-      <center>
-        <SignUpForm></SignUpForm>
-      </center>
+
+      <SignInForm></SignInForm>
+      <SignUpForm></SignUpForm>
     </div>
   );
 };
