@@ -25,7 +25,7 @@ const Navigation = () => {
             marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "5px",
+            marginBottom: "1px",
           }}
           className="nav-link"
           to="/Shop"
@@ -39,7 +39,7 @@ const Navigation = () => {
             marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "5px",
+            marginBottom: "1px",
           }}
           className="nav-link"
           to="/signIn"
@@ -53,7 +53,7 @@ const Navigation = () => {
             marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "5px",
+            marginBottom: "1px",
           }}
           className="nav-link"
           to="/Shop"

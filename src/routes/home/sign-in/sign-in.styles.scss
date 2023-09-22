@@ -1,9 +1,7 @@
-.sign-up-container {
+.sign-in-conatiner {
   display: flex;
-  flex-direction: column;
-  width: 380px;
-  h2 {
-    margin: 10px 0;
-  }
+  justify-content: space-between;
+  width: 900px;
+  margin: 70px auto;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

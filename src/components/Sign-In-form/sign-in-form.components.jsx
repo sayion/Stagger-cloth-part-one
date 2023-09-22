@@ -1,10 +1,11 @@
 import { useState } from "react";
 import FormInput from "../form-input/form-input.components";
 import Button from "../button/button.components";
-import " C:/Users/sayiondebnath/Desktop/crown-clothing/src/components/Sign-In-form/sign-in-form.styles.scss";
+import "./sign-in-form.styles.scss";
 import {
-  createAuthUserWithEmailAndPassword,
+  signInWithGooglePopup,
   createUserDocumentsFromAuth,
+  signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
 const defaultFormFields = {
   email: "",
@@ -14,16 +15,32 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
   console.log(formFields);
+
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
 
+  const signInWithGoogle = async () => {
+    const { user } = await signInWithGooglePopup();
+    await createUserDocumentsFromAuth(user);
+  };
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
+      const response = await signInAuthUserWithEmailAndPassword(
+        email,
+        password
+      );
+      console.log(response);
       resetFormFields();
-    } catch (error) {}
+    } catch (error) {
+      if (error.code === "auth/wrong-password") {
+        alert("Incorrect Password Input");
+      }
+      alert("Incorrect Password or User Input");
+      console.log(error);
+    }
   };
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -31,8 +48,19 @@ const SignInForm = () => {
   };
   return (
     <div className="sign-in-container">
-      <h2>Already have an account</h2>
-      <h3>Sign Up with Email and Password</h3>
+      <h2
+        style={{
+          color: "black",
+          borderBottom: "1.5px solid black",
+          fontSize: "25px",
+          color: "black",
+        }}
+      >
+        Already have an account
+      </h2>
+      <h3 style={{ color: "black", borderBottom: "1.5px solid black" }}>
+        Sign Up with Email and Password
+      </h3>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="Email"
@@ -52,7 +80,12 @@ const SignInForm = () => {
           value={password}
         ></FormInput>
 
-        <Button type="submit">Sign In</Button>
+        <div className="button-conatiner">
+          <Button type="submit">Sign In</Button>
+          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
+            GOOGLE SIGN IN
+          </Button>
+        </div>
       </form>
     </div>
   );

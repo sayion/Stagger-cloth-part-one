@@ -1,16 +1,19 @@
+import "C:/Users/sayion debnath/Desktop/crown-clothing/src/routes/home/sign-in/css/main.css";
 const Main = () => {
   return (
     <>
       <div style={{ margin: "10px 10px" }}>
         <h1
           style={{
-            marginTop: "8%",
+            marginTop: "6%",
             marginBottom: "4.5%",
             borderBottom: "2px solid black",
             paddingBottom: "3px",
+            fontSize: "70px",
+            borderRadius: "20px",
           }}
         >
-          Breathe Into The New Lifestyle
+          <center>Breathe Into The New Lifestyle</center>
         </h1>
         <img
           style={{ height: "70%", width: "100%" }}
@@ -25,9 +28,11 @@ const Main = () => {
             marginBottom: "5%",
             borderBottom: "2px solid black",
             paddingBottom: "3px",
+            fontSize: "75px",
+            borderRadius: "20px",
           }}
         >
-          The Color Awaits For You
+          <center>The Color Awaits For You</center>
         </h1>
         <img
           style={{ height: "100%", width: "100%" }}
@@ -37,7 +42,15 @@ const Main = () => {
       </div>
       <div style={{ marginBottom: "10%" }}></div>
       <div>
-        <h1 style={{ borderBottom: "1.7px solid black", paddinBottom: "4px" }}>
+        <h1
+          style={{
+            borderBottom: "3px solid black",
+            paddinBottom: "20px",
+            fontSize: "70px",
+            marginBottom: "70px",
+            borderRadius: "20px",
+          }}
+        >
           <center>Explore Our Features</center>
         </h1>
       </div>

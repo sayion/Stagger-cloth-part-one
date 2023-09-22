@@ -1,19 +1,9 @@
-import { signInWithGooglePopup } from "C:/Users/sayion debnath/Desktop/crown-clothing/src/utils/firebase/firebase.utils.js";
-import { createUserDocumentsFromAuth } from "C:/Users/sayion debnath/Desktop/crown-clothing/src/utils/firebase/firebase.utils.js";
 import SignUpForm from "../../../components/sign-up-form/sign-up-form.components";
 import SignInForm from "../../../components/Sign-In-form/sign-in-form.components";
+import "./sign-in.styles.scss";
 const SignIn = () => {
-  const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    createUserDocumentsFromAuth(user);
-  };
-
   return (
-    <div>
-      <h1>
-        <center>SignIn In Page</center>
-      </h1>
-
+    <div className="sign-in-conatiner">
       <SignInForm></SignInForm>
       <SignUpForm></SignUpForm>
     </div>
