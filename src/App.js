@@ -3,10 +3,7 @@ import Home from "./routes/home/home.components.jsx";
 import Say from "./routes/home/say.components";
 import SignIn from "./routes/home/sign-in/sign-in.components.jsx";
 import Navigation from "./routes/home/Navigation/navigation.components.jsx";
-const Shop = () => {
-  return <h1>Heloo this is a SHop page</h1>;
-};
-
+import Shop from "./routes/home/shop/shop.components";
 const App = () => {
   return (
     <Routes>

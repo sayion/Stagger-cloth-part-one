@@ -39,10 +39,23 @@ const Navigation = () => {
           SHOP
         </Link>
         {currentUser ? (
-          <span className="nav-link" onClick={signOutUser}>
+          <h5
+            style={{
+              textDecoration: "none",
+              color: "black",
+              marginTop: "45px",
+              fontSize: "20px",
+              borderBottom: "1.2px solid black",
+              marginBottom: "1px",
+              cursor: "pointer",
+              color: "red",
+            }}
+            className="nav-link"
+            onClick={signOutUser}
+          >
             {" "}
             SIGN OUT{" "}
-          </span>
+          </h5>
         ) : (
           <Link
             style={{
@@ -74,7 +87,7 @@ const Navigation = () => {
         >
           CONTACT
         </Link>
-        <Link
+        {/* <Link
           style={{
             textDecoration: "none",
             color: "black",
@@ -94,7 +107,7 @@ const Navigation = () => {
             src="./images/shopping-cart.png"
             alt="shopping cart"
           ></img>
-        </Link>
+        </Link> */}
         <span> </span>
       </div>
       <Outlet></Outlet>

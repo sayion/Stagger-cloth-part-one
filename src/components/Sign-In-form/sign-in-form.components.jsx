@@ -48,21 +48,34 @@ const SignInForm = () => {
   };
   return (
     <div className="sign-in-container">
-      <h2
-        style={{
-          color: "black",
-          borderBottom: "1.5px solid black",
-          fontSize: "25px",
-          color: "black",
-        }}
-      >
-        Already have an account
-      </h2>
-      <h3 style={{ color: "black", borderBottom: "1.5px solid black" }}>
-        Sign Up with Email and Password
-      </h3>
+      <center>
+        <h2
+          style={{
+            color: "black",
+            borderBottom: "2px solid black",
+            fontSize: "28px",
+            color: "black",
+            marginBottom: "30px",
+            fontFamily: "sans-serif",
+          }}
+        >
+          Already have an account !
+        </h2>
+      </center>
+
+      <center>
+        <h3
+          style={{ color: "black", fontFamily: "sans-serif", fontSize: "20px" }}
+        >
+          Sign Up with Email and Password
+        </h3>
+      </center>
       <form onSubmit={handleSubmit}>
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Email"
           type="email"
           required
@@ -72,6 +85,10 @@ const SignInForm = () => {
         ></FormInput>
 
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Password"
           type="password"
           required
@@ -81,8 +98,27 @@ const SignInForm = () => {
         ></FormInput>
 
         <div className="button-conatiner">
-          <Button type="submit">Sign In</Button>
-          <Button type="button" buttonType="google" onClick={signInWithGoogle}>
+          <Button
+            style={{
+              fontFamily: "Helvetica",
+              fontSize: "14px",
+              borderRadius: "10px",
+            }}
+            type="submit"
+          >
+            Sign In
+          </Button>
+          <Button
+            style={{
+              fontFamily: "Helvetica",
+              fontSize: "14px",
+              borderRadius: "10px",
+              background: " blue",
+            }}
+            type="button"
+            buttonType="google"
+            onClick={signInWithGoogle}
+          >
             GOOGLE SIGN IN
           </Button>
         </div>

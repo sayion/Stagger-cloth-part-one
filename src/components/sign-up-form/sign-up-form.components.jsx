@@ -49,14 +49,29 @@ const SignUpForm = () => {
   };
   return (
     <div className="sign-up-container">
-      <h2 style={{ borderBottom: "1.5px solid black" }}>
-        Dont have an account
-      </h2>
-      <h2 style={{ borderBottom: "1.5px solid black" }}>
-        Sign Up with Email and Password
-      </h2>
+      <center>
+        <h2
+          style={{
+            fontSize: "30px",
+            marginBottom: "40px",
+            fontFamily: "sans-serif",
+            borderBottom: "2px solid black",
+          }}
+        >
+          Don't have an account ?
+        </h2>
+      </center>
+      <center>
+        <h2 style={{ fontSize: "20px", fontFamily: "sans-serif" }}>
+          Sign Up with Email and Password
+        </h2>
+      </center>
       <form onSubmit={handleSubmit}>
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Display Name"
           type="text"
           required
@@ -66,6 +81,10 @@ const SignUpForm = () => {
         ></FormInput>
 
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Email"
           type="email"
           required
@@ -75,6 +94,10 @@ const SignUpForm = () => {
         ></FormInput>
 
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Password"
           type="password"
           required
@@ -84,6 +107,10 @@ const SignUpForm = () => {
         ></FormInput>
 
         <FormInput
+          style={{
+            borderRadius: "10px",
+            borderBottom: "2px solid red",
+          }}
           label="Confirm Password"
           type="password"
           required
@@ -91,7 +118,18 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         ></FormInput>
-        <Button type="submit">Sign Up</Button>
+        <center>
+          <Button
+            style={{
+              fontFamily: "Helvetica",
+              fontSize: "14px",
+              borderRadius: "10px",
+            }}
+            type="submit"
+          >
+            Sign Up
+          </Button>
+        </center>
       </form>
     </div>
   );
