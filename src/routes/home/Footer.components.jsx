@@ -27,12 +27,12 @@ const Footer = () => {
           <h3 style={{ opacity: "1" }}>
             <span>India</span>
             <br></br>Pitchfork schlitz tonx, <br></br>coloring book celiac
-            tousled succulents ascot affogato<br></br>#89890/HG
+            tousled succulents<br></br> ascot affogato<br></br>#89890/HG
           </h3>
           <h3 style={{ opacity: "1" }}>
             <span>France</span>
             <br></br>Pitchfork schlitz tonx, <br></br>coloring book celiac
-            tousled succulents ascot affogato<br></br>#89890/HG
+            tousled succulents <br></br>ascot affogato<br></br>#89890/HG
           </h3>
         </div>
         <div
@@ -56,12 +56,12 @@ const Footer = () => {
           <h3 style={{ opacity: "1" }}>
             <span>London</span>
             <br></br>Pitchfork schlitz tonx, <br></br>coloring book celiac
-            tousled succulents ascot affogato<br></br>#89890/HG
+            tousled succulents <br></br>ascot affogato<br></br>#89890/HG
           </h3>
           <h3 style={{ opacity: "1" }}>
             <span>Australia</span>
             <br></br>Pitchfork schlitz tonx, <br></br>coloring book celiac
-            tousled succulents ascot affogato<br></br>#89890/HG
+            tousled succulents<br></br> ascot affogato<br></br>#89890/HG
           </h3>
         </div>
         <div
@@ -85,9 +85,7 @@ const Footer = () => {
         <center>
           <form action="https://formspree.io/f/xjvqowzp" method="POST">
             <center>
-              <span style={{ marginBottom: "30px" }}>
-                Email Us Through Your query
-              </span>
+              <span className="sspan">Email Us Through Your query</span>
             </center>
             <input
               className="input"

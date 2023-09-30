@@ -7,7 +7,7 @@ const Main = () => {
           style={{
             marginTop: "6%",
             marginBottom: "4.5%",
-            borderBottom: "2px solid black",
+            borderBottom: "6px solid black",
             paddingBottom: "3px",
             fontSize: "70px",
             borderRadius: "20px",
@@ -26,7 +26,7 @@ const Main = () => {
           style={{
             marginTop: "8%",
             marginBottom: "5%",
-            borderBottom: "2px solid black",
+            borderBottom: "5px solid black",
             paddingBottom: "3px",
             fontSize: "75px",
             borderRadius: "20px",
@@ -44,7 +44,7 @@ const Main = () => {
       <div>
         <h1
           style={{
-            borderBottom: "3px solid black",
+            borderBottom: "5px solid black",
             paddinBottom: "20px",
             fontSize: "70px",
             marginBottom: "70px",

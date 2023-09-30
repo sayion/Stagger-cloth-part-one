@@ -1,7 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import "./navigation.styles.scss";
+import { UserContext } from "../../../components/context/user.context";
+import "./navi.css";
+import { signOutUser } from "../../../utils/firebase/firebase.utils";
 const Navigation = () => {
+  const { currentUser } = useContext(UserContext);
+  console.log(currentUser);
+
   return (
     <Fragment>
       <div className="navigation">
@@ -32,6 +38,28 @@ const Navigation = () => {
         >
           SHOP
         </Link>
+        {currentUser ? (
+          <span className="nav-link" onClick={signOutUser}>
+            {" "}
+            SIGN OUT{" "}
+          </span>
+        ) : (
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "black",
+              marginTop: "45px",
+              fontSize: "20px",
+              borderBottom: "1.2px solid black",
+              marginBottom: "1px",
+            }}
+            className="nav-link"
+            to="/signIn"
+          >
+            SIGN IN
+          </Link>
+        )}
+
         <Link
           style={{
             textDecoration: "none",
@@ -39,21 +67,7 @@ const Navigation = () => {
             marginTop: "45px",
             fontSize: "20px",
             borderBottom: "1.2px solid black",
-            marginBottom: "1px",
-          }}
-          className="nav-link"
-          to="/signIn"
-        >
-          SIGN IN
-        </Link>
-        <Link
-          style={{
-            textDecoration: "none",
-            color: "black",
-            marginTop: "45px",
-            fontSize: "20px",
-            borderBottom: "1.2px solid black",
-            marginBottom: "1px",
+            marginBottom: "2px",
           }}
           className="nav-link"
           to="/Shop"
@@ -71,11 +85,17 @@ const Navigation = () => {
           to="/Shop"
         >
           <img
-            style={{ height: "90%", width: "85%", marginBottom: "20px" }}
+            style={{
+              height: "90%",
+              width: "85%",
+              marginBottom: "20px",
+              marginRight: "3px",
+            }}
             src="./images/shopping-cart.png"
             alt="shopping cart"
           ></img>
         </Link>
+        <span> </span>
       </div>
       <Outlet></Outlet>
     </Fragment>
