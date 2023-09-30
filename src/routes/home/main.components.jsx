@@ -11,6 +11,7 @@ const Main = () => {
             paddingBottom: "3px",
             fontSize: "70px",
             borderRadius: "20px",
+            cursor: "pointer",
           }}
         >
           <center>Breathe Into The New Lifestyle</center>
@@ -30,6 +31,7 @@ const Main = () => {
             paddingBottom: "3px",
             fontSize: "75px",
             borderRadius: "20px",
+            cursor: "pointer",
           }}
         >
           <center>The Color Awaits For You</center>
@@ -49,6 +51,7 @@ const Main = () => {
             fontSize: "70px",
             marginBottom: "70px",
             borderRadius: "20px",
+            cursor: "pointer",
           }}
         >
           <center>Explore Our Features</center>

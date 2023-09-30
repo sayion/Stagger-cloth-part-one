@@ -4,9 +4,12 @@ import "./navigation.styles.scss";
 import { UserContext } from "../../../components/context/user.context";
 import "./navi.css";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
+import { CartContext } from "../../../components/context/cart.context";
+import CartIcon from "../../../components/cart-icon/cart-icon.components";
+import CartDown from "../../../components/cart-dropdown/cart-dropdown.components";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  console.log(currentUser);
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Fragment>
@@ -17,7 +20,7 @@ const Navigation = () => {
               height: "220%",
               width: "110%",
               marginLeft: "20px",
-              marginBottom: "50px",
+              marginBottom: "70px",
             }}
             src="/images/nin.png"
             alt="My png"
@@ -108,8 +111,9 @@ const Navigation = () => {
             alt="shopping cart"
           ></img>
         </Link> */}
-        <span> </span>
+        <CartIcon></CartIcon>
       </div>
+      {isCartOpen && <CartDown></CartDown>}
       <Outlet></Outlet>
     </Fragment>
   );

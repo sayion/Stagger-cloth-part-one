@@ -7,16 +7,16 @@
   position: relative;
   margin-top: 5px;
 
-  img {
+  .img {
     width: 97%;
     height: 97%;
     object-fit: cover;
     margin-bottom: 2px;
-    border-radius: 8%;
-    -webkit-border-radius: 8%;
-    -moz-border-radius: 8%;
-    -ms-border-radius: 8%;
-    -o-border-radius: 8%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
     margin-top: 5px;
   }
 
@@ -36,8 +36,8 @@
   }
 
   &:hover {
-    img {
-      opacity: 0.8;
+    .img {
+      opacity: 1;
     }
 
     button {
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 
     .name {
       width: 70%;

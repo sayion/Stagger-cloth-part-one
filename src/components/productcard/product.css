@@ -1,0 +1,14 @@
+.img:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transform: scale(1.123);
+  -webkit-transform: scale(1.123);
+  -moz-transform: scale(1.123);
+  -ms-transform: scale(1.123);
+  -o-transform: scale(1.123);
+  overflow: none;
+}
