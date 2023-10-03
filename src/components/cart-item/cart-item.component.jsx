@@ -9,7 +9,7 @@ const CartItem = ({ cartItem }) => {
       <div className="item-details">
         <h5 className="name">{name}</h5>
         <h5 className="price">
-          {quantity} x ${price}
+          {quantity} x &#8377; {price}
         </h5>
       </div>
     </div>

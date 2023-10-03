@@ -1,12 +1,14 @@
+.nav-link {
+  transition: transform 0.5s ease;
+}
 .nav-link:hover {
-  transition: 0.5s ease-out;
   transform: scale(1.4);
   -webkit-transform: scale(1.4);
   -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
   -o-transform: scale(1.4);
-  -webkit-transition: 0.5s ease-out;
-  -moz-transition: 0.5s ease-out;
-  -ms-transition: 0.5s ease-out;
-  -o-transition: 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
 }

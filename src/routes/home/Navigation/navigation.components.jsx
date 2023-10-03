@@ -13,16 +13,16 @@ const Navigation = () => {
 
   return (
     <Fragment>
-      <div className="navigation">
+      <div style={{ marginBottom: "25px" }} className="navigation">
         <Link className="logo-container" to="/">
           <img
             style={{
               height: "220%",
-              width: "110%",
+              width: "120%",
               marginLeft: "20px",
               marginBottom: "70px",
             }}
-            src="/images/nin.png"
+            src="/images/Black.png"
             alt="My png"
           ></img>
         </Link>
@@ -31,10 +31,14 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "45px",
-            fontSize: "20px",
-            borderBottom: "1.2px solid black",
-            marginBottom: "1px",
+            marginTop: "35px",
+            marginLeft: "5px",
+            paddingLeft: "31px",
+            fontSize: "26px",
+            width: "7%",
+            alignItems: "center",
+
+            marginBottom: "0px",
           }}
           className="nav-link"
           to="/Shop"
@@ -45,13 +49,15 @@ const Navigation = () => {
           <h5
             style={{
               textDecoration: "none",
-              color: "black",
-              marginTop: "45px",
-              fontSize: "20px",
-              borderBottom: "1.2px solid black",
-              marginBottom: "1px",
-              cursor: "pointer",
+
               color: "red",
+              marginTop: "35px",
+              paddingLeft: "30px",
+              fontSize: "27px",
+              width: "7%",
+
+              marginBottom: "0px",
+              cursor: "pointer",
             }}
             className="nav-link"
             onClick={signOutUser}
@@ -64,9 +70,11 @@ const Navigation = () => {
             style={{
               textDecoration: "none",
               color: "black",
-              marginTop: "45px",
-              fontSize: "20px",
-              borderBottom: "1.2px solid black",
+              marginTop: "35px",
+              paddingLeft: "10px",
+              fontSize: "28px",
+              width: "7%",
+
               marginBottom: "1px",
             }}
             className="nav-link"
@@ -80,10 +88,14 @@ const Navigation = () => {
           style={{
             textDecoration: "none",
             color: "black",
-            marginTop: "45px",
-            fontSize: "20px",
-            borderBottom: "1.2px solid black",
-            marginBottom: "2px",
+            marginTop: "35px",
+            marginLeft: "5px",
+            paddingLeft: "25px",
+            fontSize: "27px",
+            width: "8%",
+            position: "center",
+
+            marginBottom: "0px",
           }}
           className="nav-link"
           to="/Shop"

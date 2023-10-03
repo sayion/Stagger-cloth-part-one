@@ -113,10 +113,10 @@ const SignInForm = () => {
               fontFamily: "Helvetica",
               fontSize: "14px",
               borderRadius: "10px",
-              background: " blue",
+              background: "blue",
             }}
             type="button"
-            buttonType="google"
+            buttonType="google-sign-in"
             onClick={signInWithGoogle}
           >
             GOOGLE SIGN IN

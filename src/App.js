@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.components.jsx";
-import Say from "./routes/home/say.components";
+
 import SignIn from "./routes/home/sign-in/sign-in.components.jsx";
 import Navigation from "./routes/home/Navigation/navigation.components.jsx";
 import Shop from "./routes/home/shop/shop.components";
+import Checkout from "./routes/checkout/checkout.component.jsx";
 const App = () => {
   return (
     <Routes>
@@ -11,7 +12,7 @@ const App = () => {
         <Route index element={<Home></Home>}></Route>
         <Route path="/Shop" element={<Shop></Shop>}></Route>
         <Route path="signIn" element={<SignIn></SignIn>}></Route>
-        <Route path="Say" element={<Say></Say>}></Route>
+        <Route path="checkout" element={<Checkout></Checkout>}></Route>
       </Route>
     </Routes>
   );
