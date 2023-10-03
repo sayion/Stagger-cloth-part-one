@@ -3,7 +3,7 @@ import { useContext } from "react";
 import "./cart-icon.styles.scss";
 import { CartContext } from "../context/cart.context";
 const CartIcon = () => {
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
   return (
     <div
@@ -16,16 +16,16 @@ const CartIcon = () => {
           height: "100%",
           width: "95%",
           marginTop: "0px",
-          marginBottom: "53px",
-          marginRight: "3px",
+          marginBottom: "56px",
+          marginRight: "2px",
         }}
         className="shopping-icon"
       />
       <h5
-        style={{ fontSize: "15px", paddingTop: "10px" }}
+        style={{ fontSize: "15px", paddingTop: "15px" }}
         className="item-count"
       >
-        0
+        {cartCount}
       </h5>
     </div>
   );

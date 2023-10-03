@@ -4,15 +4,14 @@ import ProductCard from "../../../components/productcard/product-card.components
 import "./shop.styles.scss";
 const Shop = () => {
   const { products } = useContext(ProductsContext);
+
   return (
-    <div
-      style={{ marginTop: "74px", marginLeft: "5px", marginRight: "5px" }}
-      className="products-container"
-    >
-      {products.map(({ imageUrl, name, price, id }) => (
-        <ProductCard key={id} product={{ imageUrl, name, price }}></ProductCard>
+    <div className="products-container">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
 };
+
 export default Shop;
