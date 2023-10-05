@@ -15,10 +15,10 @@
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     display: flex;
-    color: red;
+    color: rgb(248, 246, 246);
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #0000ff 0%, #000000 56%);
 
     .header-block {
       text-transform: capitalize;

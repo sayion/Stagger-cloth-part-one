@@ -40,7 +40,7 @@ const Navigation = () => {
 
             marginBottom: "0px",
           }}
-          className="nav-link"
+          className="nav-link focus-in-expand"
           to="/Shop"
         >
           SHOP
@@ -59,7 +59,7 @@ const Navigation = () => {
               marginBottom: "0px",
               cursor: "pointer",
             }}
-            className="nav-link"
+            className="nav-link focus-in-expand"
             onClick={signOutUser}
           >
             {" "}
@@ -77,7 +77,7 @@ const Navigation = () => {
 
               marginBottom: "1px",
             }}
-            className="nav-link"
+            className="nav-link focus-in-expand"
             to="/signIn"
           >
             SIGN IN
@@ -89,15 +89,15 @@ const Navigation = () => {
             textDecoration: "none",
             color: "black",
             marginTop: "35px",
-            marginLeft: "5px",
-            paddingLeft: "25px",
+            marginLeft: "1px",
+            paddingLeft: "20px",
             fontSize: "27px",
             width: "8%",
             position: "center",
 
             marginBottom: "0px",
           }}
-          className="nav-link"
+          className="nav-link focus-in-expand"
           to="/Shop"
         >
           CONTACT

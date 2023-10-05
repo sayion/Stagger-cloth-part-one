@@ -17,7 +17,7 @@ const Shop = () => {
           paddingLeft: "100px",
           borderRadius: "12px",
           borderBottom: "3px solid Black",
-          background: "red",
+          background: "linear-gradient(90deg, #FF0000 0%, #FFEB3B 47%);)",
         }}
       >
         Men's Wear

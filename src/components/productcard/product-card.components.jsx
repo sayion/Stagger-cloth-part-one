@@ -10,8 +10,12 @@ const ProductCard = ({ product }) => {
   const addProductToCart = () => addItemToCart(product);
   return (
     <>
-      <div style={{ marginTop: "47px" }} className="product-card-container">
-        <img className="img" src={imageUrl} alt={`${name}`}></img>
+      <div style={{ marginTop: "47px" }} className="product-card-container ">
+        <img
+          className="img fade-in-bottom"
+          src={imageUrl}
+          alt={`${name}`}
+        ></img>
         <div className="footer">
           <h5 className="name">{name}</h5>
           <h5 className="price">{price}</h5>

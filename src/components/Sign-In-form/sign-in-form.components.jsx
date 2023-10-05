@@ -73,7 +73,7 @@ const SignInForm = () => {
       <form onSubmit={handleSubmit}>
         <FormInput
           style={{
-            borderRadius: "10px",
+            borderRadius: "6px",
             borderBottom: "2px solid red",
           }}
           label="Email"
@@ -86,7 +86,7 @@ const SignInForm = () => {
 
         <FormInput
           style={{
-            borderRadius: "10px",
+            borderRadius: "6px",
             borderBottom: "2px solid red",
           }}
           label="Password"
