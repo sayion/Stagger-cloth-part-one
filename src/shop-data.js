@@ -2,13 +2,13 @@ const SHOP_DATA = [
   {
     title: "Hats",
     items: [
-      // {
-      //   id: 1,
-      //   name: "Brown Brim",
-      //   imageUrl:
-      //     " https://rukminim2.flixcart.com/image/832/832/l4n2oi80/shirt/r/5/x/s-printed-040-marmic-fab-original-imagfhhwkghygrjh.jpeg?q=70",
-      //   price: 2500,
-      // },
+      {
+        id: 1,
+        name: "Brown Brim",
+        imageUrl:
+          " https://rukminim2.flixcart.com/image/832/832/l4n2oi80/shirt/r/5/x/s-printed-040-marmic-fab-original-imagfhhwkghygrjh.jpeg?q=70",
+        price: 2500,
+      },
       {
         id: 2,
         name: "Blue Beanie",

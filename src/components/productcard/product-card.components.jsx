@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
     <>
       <div style={{ marginTop: "47px" }} className="product-card-container ">
         <img
-          className="img fade-in-bottom"
+          className="img  slide-in-fwd-center "
           src={imageUrl}
           alt={`${name}`}
         ></img>

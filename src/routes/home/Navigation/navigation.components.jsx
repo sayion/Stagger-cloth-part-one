@@ -50,10 +50,16 @@ const Navigation = () => {
             style={{
               textDecoration: "none",
 
-              color: "red",
+              /** TEXT GRADIENT */ color: " #ff0a0a",
+              backgroundImage:
+                "-webkit-linear-gradient(0deg, #ff0a0a 73%, #e91e63 100%)",
+              backgroundClip: " text",
+              textFillColor: "transparent",
+              WebkitTextFillColor: " transparent",
+
               marginTop: "35px",
-              paddingLeft: "30px",
-              fontSize: "27px",
+              paddingLeft: "10px",
+              fontSize: "25px",
               width: "7%",
 
               marginBottom: "0px",
@@ -63,7 +69,7 @@ const Navigation = () => {
             onClick={signOutUser}
           >
             {" "}
-            SIGN OUT{" "}
+            SIGNOUT{" "}
           </h5>
         ) : (
           <Link
@@ -72,7 +78,7 @@ const Navigation = () => {
               color: "black",
               marginTop: "35px",
               paddingLeft: "10px",
-              fontSize: "28px",
+              fontSize: "26px",
               width: "7%",
 
               marginBottom: "1px",
@@ -90,17 +96,17 @@ const Navigation = () => {
             color: "black",
             marginTop: "35px",
             marginLeft: "1px",
-            paddingLeft: "20px",
-            fontSize: "27px",
+            paddingLeft: "10px",
+            fontSize: "25px",
             width: "8%",
             position: "center",
 
             marginBottom: "0px",
           }}
           className="nav-link focus-in-expand"
-          to="/Shop"
+          to="/AboutUs"
         >
-          CONTACT
+          ABOUT US
         </Link>
         {/* <Link
           style={{

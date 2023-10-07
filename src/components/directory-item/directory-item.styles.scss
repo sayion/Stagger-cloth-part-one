@@ -1,4 +1,4 @@
-.category-container {
+.directory-item-container {
   min-width: 30%;
   height: 250px;
   flex: 1 1 auto;
@@ -21,7 +21,7 @@
       -o-transform: scale(1.3);
     }
 
-    & .category-body-container {
+    & .directory-body-container {
       opacity: 0.8;
     }
   }
@@ -45,7 +45,7 @@
     background-position: center;
   }
 
-  .category-body-container {
+  .directory-body-container {
     height: 90px;
     padding: 8px 10px;
     display: flex;
