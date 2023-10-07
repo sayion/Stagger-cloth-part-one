@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../../components/context/cart.context";
 import CheckoutItem from "../../components/checkout-item/checkout-item.components";
 import Footer from "../home/Footer.components";
+import MyComponent from "C:/Users/sayion debnath/Desktop/crown-clothing/src/components/payment/payment.component.jsx";
 const Checkout = () => {
   const { cartItems, cartTotal } = useContext(CartContext);
 
@@ -21,6 +22,7 @@ const Checkout = () => {
           <CheckoutItem key={cartItem.id} cartItem={cartItem}></CheckoutItem>
         ))}
         <h5 className="total">Total : &#8377; {cartTotal}</h5>
+        <MyComponent></MyComponent>
         <br></br>
       </div>
 
