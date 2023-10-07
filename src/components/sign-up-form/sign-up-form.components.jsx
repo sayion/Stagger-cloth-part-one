@@ -55,7 +55,6 @@ const SignUpForm = () => {
             fontSize: "30px",
             marginBottom: "40px",
             fontFamily: "sans-serif",
-            borderBottom: "2px solid black",
           }}
         >
           Don't have an account ?

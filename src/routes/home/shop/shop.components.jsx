@@ -1,38 +1,25 @@
-import { useContext } from "react";
-import { ProductsContext } from "../../../components/context/products.context";
+import { useContext, Fragment } from "react";
+import { CategoriesContext } from "../../../components/context/categories.context";
 import ProductCard from "../../../components/productcard/product-card.components.jsx";
 import "./shop.styles.scss";
 import Footer from "../Footer.components";
 
 const Shop = () => {
-  const { products } = useContext(ProductsContext);
+  const { categoriesMap } = useContext(CategoriesContext);
 
   return (
-    <>
-      <br></br>
-      <h1
-        style={{
-          marginTop: "60px",
-          fontSize: "50px",
-          paddingLeft: "100px",
-          borderRadius: "12px",
-          borderBottom: "3px solid Black",
-          background: "linear-gradient(90deg, #FF0000 0%, #FFEB3B 47%);)",
-        }}
-      >
-        Men's Wear
-      </h1>
-
-      <div className="products-container">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Footer></Footer>
-    </>
+    <Fragment>
+      {Object.keys(categoriesMap).map((title) => (
+        <Fragment key={title}>
+          <h2>{title}</h2>
+          <div className="products-container">
+            {categoriesMap[title].map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </Fragment>
+      ))}
+    </Fragment>
   );
 };
 

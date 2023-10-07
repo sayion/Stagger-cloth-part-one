@@ -9,7 +9,7 @@ const CheckoutItem = ({ cartItem }) => {
   const addItemHandler = () => addItemToCart(cartItem);
   const removeItemHandler = () => removeItemToCart(cartItem);
   return (
-    <div className="checkout-item-container">
+    <div className="checkout-item-container fade-in-bottom">
       <div className="image-container">
         <img src={imageUrl} alt={`${name}`} />
       </div>

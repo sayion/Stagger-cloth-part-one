@@ -9,7 +9,7 @@ const Checkout = () => {
   return (
     <>
       <div style={{ marginTop: "80px" }} className="checkout-container">
-        <div className="checkout-header">
+        <div className="checkout-header  ">
           <div className="header-block">Products</div>
           <div className="header-block">Description</div>
           <div className="header-block">Quantity</div>

@@ -52,7 +52,7 @@ const SignInForm = () => {
         <h2
           style={{
             color: "black",
-            borderBottom: "2px solid black",
+
             fontSize: "28px",
             color: "black",
             marginBottom: "30px",
@@ -113,7 +113,8 @@ const SignInForm = () => {
               fontFamily: "Helvetica",
               fontSize: "14px",
               borderRadius: "10px",
-              background: "blue",
+              background:
+                "   linear-gradient(90deg, #0149FF 15%, #100280 100%)z",
             }}
             type="button"
             buttonType="google-sign-in"

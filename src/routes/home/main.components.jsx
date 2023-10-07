@@ -19,7 +19,12 @@ const Main = () => {
           <center>Breathe Into The New Lifestyle</center>
         </h1>
         <h5 className="trelko text-focus-in ">
-          "Crafted For Your Confidence : Your Fashion ,Your Rules "
+          <span className="spanning">""</span> Welcome to KANDID, where fashion
+          meets comfort and Explore our handpicked selection, and let your
+          wardrobe tell your story. Join us on a journey of self-expression
+          through fashion, where every outfit is a statement, and every piece is
+          designed with you in mind. Experience the<br></br> art of dressing
+          well, with Kandid. <span className="spanning">""</span>
         </h5>
         <br></br>
         <br></br>
@@ -32,7 +37,7 @@ const Main = () => {
           alt="First Image"
         ></img>
       </div>
-      <h5 className="trello focus-in-expand">
+      <h5 className="trello ">
         "Elevate Your Wardrobe:Where Fashion Meets Passion"
       </h5>
       <div style={{ margin: "2px 10px" }}>
